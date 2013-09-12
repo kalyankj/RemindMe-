@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="sort_names">
+		<item>By Title, Ascending</item>
+		<item>By Title, Descending</item>
+		<item>By Priority</item>
+		<item>By location, Ascending</item>
+		<item>By location, Descending</item>
+	</string-array>
+	<string-array name="sort_clauses">
+		<item>title ASC</item>
+		<item>title DESC</item>
+		<item>priority, title ASC</item>
+		<item>latitude, longitude ASC</item>
+		<item>longitude, longitude DESC</item>
+	</string-array>
+	<string-array name="team_names">
+		<item>FAMILY</item>
+		<item>FRIENDS</item>
+		<item>BUSINESS</item>
+		<item>PUBLIC</item>
+	</string-array>
+	<string-array name="team_values">
+		<item>FAMILY</item>
+		<item>FRIENDS</item>
+		<item>BUSINESS</item>
+		<item>PUBLIC</item>
+	</string-array>
+</resources>

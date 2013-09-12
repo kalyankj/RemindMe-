@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/friends_distance"
+		android:title="friends location"
+	/>
+	<item  android:id="@+id/tasks_near_friends"
+		android:title="tasks near friends"
+	/>
+</menu>

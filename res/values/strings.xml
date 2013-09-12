@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="background_started">Map reminder service</string>
+<string name="menu_zoomExtent">View Alarms</string>
+<string name="menu_login">login</string>
+<string name="background_stopped">Local service has stopped</string>
+<string name="background_connected">Connected to GPS Observer service</string>
+<string name="confirm">confirm</string>
+<string name="menu_edit">Edit Alarm</string>
+<string name="menu_search">search</string>
+<string name="menu_exit">Exit</string>
+<string name="body">Enter details</string>
+<string name="GOOGLE_MAPS_API_KEY">0i1kS7qVdrBRmf0DJ_WqpGGFrGFnY7VRXz0lTXQ</string>
+<string name="app_name">RemindMe@</string>
+<string name="background_disconnected">Disconnected from GPS Observer service</string>
+<string name="app_detail">This application will allow you to register reminders at locations and keep track. When you are near one of these locations, the application will send you an alert reminding of the task. Use the application to register your reminders. Quit the applicaiton after registering without quiting the background service.</string>
+<string name="menu_delete">Delete Alarm</string>
+<string name="menu_listAlarm">List Alarms</string>
+<string name="reminder_alert">Location reminder Alert</string>
+<string name="title">Enter title</string>
+<string name="eula_title">License</string>
+<string name="eula_accept">accept</string>
+<string name="eula_refuse">refuse</string>
+
+    <string name="unlicensed_dialog_title">Application not licensed</string>
+    <string name="unlicensed_dialog_body">Only 5 reminders are supported. Please purchase it from Android Market.</string>
+
+</resources>

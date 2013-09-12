@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    
+    <com.google.android.maps.MapView
+		xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:id="@+id/mapview"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:apiKey="0i1kS7qVdrBRmf0DJ_WqpGGFrGFnY7VRXz0lTXQ"
+		android:contentDescription="Tasks Map Viewer"
+		android:enabled="true"
+		android:clickable="true" 
+	    android:saveEnabled="true"/>
+<!-- Dev api key    android:apiKey="0i1kS7qVdrBSO6pVKAEEQLVM_H2DdMuxusOVZrA" -->
+<!-- Prod api key 	android:apiKey="0i1kS7qVdrBRmf0DJ_WqpGGFrGFnY7VRXz0lTXQ" -->
+	<LinearLayout android:id="@+id/geocoder" android:layout_width="fill_parent" android:visibility="invisible"
+       android:layout_alignParentTop="true" android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <AutoCompleteTextView android:id="@+id/location"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:completionThreshold="3" 
+            android:layout_weight="1"
+            android:text="Enter location Name" />
+       <ImageButton android:id="@+id/geocodeBtn" android:src="@drawable/ic_menu_search_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  />
+  	</LinearLayout>    
+    
+</RelativeLayout>

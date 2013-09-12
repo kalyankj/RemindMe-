@@ -1,0 +1,7 @@
+<resources>
+<style name="ourlistview1" parent="@android:style/Widget.ListView">
+	<item name="android:background">#615C54</item>
+	<item name="android:listSelector">#FEF8ED</item>
+	<item name="android:textColor">#FEFBF6</item>
+</style>
+</resources>

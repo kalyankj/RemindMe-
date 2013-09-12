@@ -1,0 +1,32 @@
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">			
+	<PreferenceCategory android:title="User Account">
+		<EditTextPreference
+			android:key="user"
+			android:title="User Name"
+			android:summary="Your Email address "
+			android:dialogTitle="Enter your Email address as username" />
+		<EditTextPreference
+			android:key="password"
+			android:title="Password"
+			android:summary="Your identi.ca account password"
+			android:password="true"
+			android:dialogTitle="Enter your identi.ca password" />
+		<ListPreference
+			android:key="team"
+			android:title="Team list"
+			android:summary="Choose your default team"
+			android:entries="@array/team_names"
+			android:entryValues="@array/team_values"
+			android:dialogTitle="Team list" />
+	</PreferenceCategory>
+	
+	<ListPreference
+		android:key="sort_order"
+		android:title="Sort Order"
+		android:summary="Choose the order the list uses"
+		android:entries="@array/sort_names"
+		android:entryValues="@array/sort_clauses"
+		android:dialogTitle="Choose a sort order" />
+		
+</PreferenceScreen>

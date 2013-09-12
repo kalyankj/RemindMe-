@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/search"
+		android:icon="@drawable/ic_menu_search"
+	/>
+	<item  android:id="@+id/List_id"
+		android:icon="@drawable/ic_menu_list"
+	/>
+	<item  android:id="@+id/List_alert_id"
+		android:icon="@drawable/ic_menu_list"
+	/>
+	<item android:id="@+id/mylocation_id" 
+		android:icon="@drawable/ic_menu_compass" 
+	/>
+	<item android:id="@+id/prefs" 
+		android:icon="@drawable/ic_menu_preferences" 
+	/>
+	<item android:id="@+id/help"
+		android:icon="@drawable/ic_menu_help"
+	/>
+	<item  android:id="@+id/List_contact_id"
+		android:title="Contacts List (debug)" 
+	/>
+	<item  android:id="@+id/List_debug_id"
+		android:title="Place List (debug)" 
+	/>
+	<item  android:id="@+id/sync_id"
+		android:title="Sync Database" 
+	/>
+	<item android:id="@+id/Exit" 
+		android:title="Exit"		
+	/>
+</menu>

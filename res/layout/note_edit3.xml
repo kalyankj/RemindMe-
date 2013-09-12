@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/reminder"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:stretchColumns="1">
+		<TableRow>
+			<TextView android:text="Added : " style="@android:style/TextAppearance.Medium"/>
+			<TextView android:id="@+id/created" android:editable="false" />
+		</TableRow>		
+		<TableRow>
+			<TextView android:text="Title:" style="@android:style/TextAppearance.Medium"/>
+			<TextView android:id="@+id/title" 
+				style="@android:style/TextAppearance.Medium"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Details:" style="@android:style/TextAppearance.Medium"/>
+			<TextView android:id="@+id/body" android:layout_width="fill_parent"
+				android:singleLine="false"
+				android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Priority:" style="@android:style/TextAppearance.Medium"/>
+			<TextView  android:id="@+id/priority"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Visble to:" style="@android:style/TextAppearance.Medium"/>
+			<TextView  android:id="@+id/team"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Due:" style="@android:style/TextAppearance.Medium"/>
+			<TextView  android:id="@+id/validtill"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Closest :" style="@android:style/TextAppearance.Medium"/>
+			<TextView  android:id="@+id/nearest" style="@android:style/TextAppearance.Small"/>
+		</TableRow>	
+		  <View android:layout_height="2px"  android:background="#0000FF" />		
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			    	<Button android:id="@+id/stop"
+			    		android:layout_width="wrap_content"
+			    		android:layout_height="wrap_content"
+			    		android:layout_weight="1"
+			    		android:text="Remove"/>
+			    	<Button android:id="@+id/snooze"
+			    		android:layout_width="wrap_content"
+			    		android:layout_height="wrap_content"
+			    		android:layout_weight="1"
+			    		android:text="Snooze 1 Day"/>
+			    	<Button android:id="@+id/tweet"
+			    		android:layout_width="wrap_content"
+			    		android:layout_height="wrap_content"
+			    		android:layout_weight="1"
+			    		android:text="Tweet"/>
+		    </LinearLayout>
+		 <EditText android:visibility="invisible" android:id="@+id/rowid"/>
+	    <EditText android:visibility="invisible" android:id="@+id/latitude"/>
+	    <EditText android:visibility="invisible" android:id="@+id/longitude"/>
+	    <EditText android:visibility="invisible" android:id="@+id/author"/>
+	    <EditText android:visibility="invisible" android:id="@+id/state" android:text="A"/>
+	    <EditText android:visibility="invisible" android:id="@+id/team"/>
+	    <EditText android:visibility="invisible" android:id="@+id/modified"/>  
+	</TableLayout>
+	<FrameLayout android:id="@android:id/tabcontent"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:layout_alignParentBottom="true">
+		<LinearLayout android:id="@+id/tweetform" android:visibility="invisible"
+		   android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<EditText android:id="@+id/status" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:singleLine="false"
+				android:minLines="4" android:scrollHorizontally="false" />
+			<Button android:id="@+id/send" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Tweet Status" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/timelineform" android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+		    <ListView android:id="@+id/posts" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" 
+				android:scrollbarAlwaysDrawVerticalTrack="true"
+				android:scrollbars="vertical" 
+				style="@style/ourlistview1"/>
+		</LinearLayout>
+	</FrameLayout>  
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:stretchColumns="1"
+	>
+	<TableRow>
+		<TextView android:text="Added : " />
+		<TextView android:id="@+id/created" android:editable="false" />
+	</TableRow>		
+	<TableRow>
+		<TextView android:text="Title:" />
+		<EditText android:id="@+id/title" 
+			android:textStyle="bold"/>
+	</TableRow>
+	<TableRow>
+		<TextView android:text="Details:" />
+		<EditText android:id="@+id/body" android:layout_width="fill_parent"
+			android:singleLine="false"
+			android:minLines="3"
+			android:scrollbars="vertical"
+			android:inputType = "text|textMultiLine|textAutoCorrect"
+			android:layout_height="wrap_content" />
+			
+	</TableRow>
+	<TableRow>
+		<TextView android:text="Priority:" />
+		<RadioGroup android:id="@+id/priority" android:orientation="horizontal" android:checkedButton="@+id/optional">
+			<RadioButton android:id="@+id/required" android:text="Required" />
+			<RadioButton android:id="@+id/optional" android:text="Optional" />
+		</RadioGroup>
+	</TableRow>
+	<TableRow>
+		<TextView android:text="Visiblity:" />
+			<EditText android:id="@+id/team1" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:enabled="false"/>
+			<ImageButton android:id="@+id/arrow" android:src="@drawable/forward" 
+			android:padding="0dip" android:paddingTop="0dip" android:paddingBottom="0dip"/>
+<!--  	<Spinner android:id="@+id/spinner" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:drawSelectorOnTop="true" />
+-->	
+	</TableRow>
+	<TableRow>
+		<TextView android:text="Valid till:" android:id="@+id/validtill"/>
+		<Button android:id="@+id/validpicker" 
+			android:layout_width="wrap_content"/>
+			<!-- android:inputType="date" -->
+	</TableRow>
+	<Button android:id="@+id/save"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="Save"/>
+    <LinearLayout android:id="@+id/alert" android:orientation="horizontal" android:visibility="invisible">
+    	<Button android:id="@+id/stop"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:text="Stop"/>
+    	<Button android:id="@+id/snooze"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:text="Snooze 1 Day"/>
+    </LinearLayout>
+    <EditText android:visibility="invisible" android:id="@+id/rowid"/>
+    <EditText android:visibility="invisible" android:id="@+id/latitude"/>
+    <EditText android:visibility="invisible" android:id="@+id/longitude"/>
+    <EditText android:visibility="invisible" android:id="@+id/author"/>
+    <EditText android:visibility="invisible" android:id="@+id/state" android:text="A"/>
+    <EditText android:visibility="invisible" android:id="@+id/forpin"/>
+    <EditText android:visibility="invisible" android:id="@+id/modified"/>    
+</TableLayout>

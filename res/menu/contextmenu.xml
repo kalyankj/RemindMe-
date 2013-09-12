@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:visible="true" android:title="Edit Reminder"
+		android:enabled="true"
+		android:titleCondensed="Edit" 
+		android:menuCategory="container" android:id="@+id/EDIT_ID"/>
+	<item android:visible="true" android:title="Tweet Status"
+		android:enabled="true"
+		android:titleCondensed="Edit" 
+		android:menuCategory="container" android:id="@+id/TWEET_ID"/>
+	<item android:visible="true" android:title="Delete Reminder"
+		android:enabled="true"
+		android:titleCondensed="Delete" 
+		android:menuCategory="container" android:id="@+id/DELETE_ID"/>
+</menu>
